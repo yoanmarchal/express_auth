@@ -1,0 +1,20 @@
+meta {
+  name: profile
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://localhost:5000/api/v1/users/profile
+  body: json
+  auth: inherit
+}
+
+headers {
+  authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI0YzIxZTMwZi0wMzFiLTQ1ZWYtOWVjOS01ZmNmNmM1YjdlMjkiLCJpYXQiOjE3MzU1ODk5ODgsImV4cCI6MTczNTU5MzU4OH0.OrcuM7mr6gyydCcKFFoBg-Yz8q5iWr1Ol4iCLzP7nLc
+}
+
+body:form-urlencoded {
+  email: marchalyoan@gmail.com
+  password: 1234
+}

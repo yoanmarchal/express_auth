@@ -1,0 +1,22 @@
+meta {
+  name: refreshtoken
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:5000/api/v1/auth/refreshToken
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "refreshToken": "BMxAlEb_yE5O65kqesnElQ"
+  }
+}
+
+body:form-urlencoded {
+  email: marchalyoan@gmail.com
+  password: 1234
+}
